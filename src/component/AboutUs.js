@@ -2,13 +2,13 @@
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col md:flex-row px-5">
+    <div className="flex flex-col lg:flex-row px-5">
 
-      <div className="w-full md:w-1/2 max-h-screen  flex flex-col justify-center items-end">
+      <div className="w-full lg:w-1/2 max-h-screen  flex flex-col justify-center items-center lg:items-end">
         <img src="./profile-pic.jpg" alt="profilepicture" className='w-[500px]'/>
       </div>
 
-      <div className="w-full md:w-1/2 h-screen bg-gray-100">
+      <div className="w-full lg:w-1/2 h-screen bg-gray-100">
         <div className="p-0 md:p-8 ">
           <h1 className="text-[38px] md:text-5xl font-bold pt-11 ">About Me</h1>
           <h2 className="pt-2 md:pt-3 text-gray-500 text-[16px]">As a passionate web developer from India, I strive to create innovative and impactful digital experiences that delight users. </h2>

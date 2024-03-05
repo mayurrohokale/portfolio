@@ -1,22 +1,27 @@
+import { CircularProgressbarWithChildren } from "react-circular-progressbar";
 export default function Resume() {
-    
   return (
-    <div>
-      <div className="flex">
-        <div className="w-1/4 h-screen bg-blue-100">
-          <nav>
+    <div className="flex flex-row h-full lg:h-[80vh]">
+      <div className="bg-blue-50 hidden lg:block">
+          <nav className="pt-32 px-14 text-[16px] font-bold text-black/80 ">
             <ul>
               <li>
-                <a href="#page-1">Education</a>
+                <a href="#page-1" className="hover:text-black ">
+                  Education 
+                </a>
               </li>
               <li>
-                <a href="#page-2">Skills</a>
+                <a href="#page-2" className="hover:text-black ">
+                  Skills
+                </a>
               </li>
             </ul>
           </nav>
         </div>
+      <div className="flex">
+        
 
-        <div className="w-3/4 h-screen ">
+        <div className="lg:overflow-y-scroll h-full ">
           <div id="page-1">
             <h2 className="text-[30px] font-bold text-custom-blue py-5 px-4">
               Education
@@ -42,7 +47,6 @@ export default function Resume() {
             </div>
 
             <div>
-              <img></img>
               <h1 className="text-[16px] font-bold text-custom-blue mt-8 px-20">
                 2019-2023
               </h1>
@@ -64,23 +68,49 @@ export default function Resume() {
             </div>
           </div>
 
-          <div id="page-2" className=" mt-9">
+          <div id="page-2" className=" mt-9 py-10">
             <div>
               <h2 className="text-[30px] font-bold text-custom-blue py-6 px-4">
                 Skills
               </h2>
-              
-                
-   
- 
 
-
-
-
+              <div className="flex flex-col md:flex-row  justify-between items-center px-10">
+                <CircularSkill/>
+                <CircularSkill/>
+                <CircularSkill/>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
   );
+}
+
+
+
+function CircularSkill(){
+  return (
+    <div className="flex flex-col rounded-xl bg-gray-300/10 py-10 px-14 hover:shadow-2xl shadow-black">
+                 
+                 <CircularProgressbarWithChildren
+                    value={90}
+                    className=""
+                    styles={{
+                      path: {
+                        stroke: "#3e64ff",
+                      },
+                      trail: {
+                        stroke: "#FFF",
+                      },
+                    }}
+                    strokeWidth={5}
+                  >
+                    <p className="text-[26px] font-bold">90%</p>
+                  </CircularProgressbarWithChildren>
+                     
+                  <h1 className="font-bold text-[20px] mt-6">HTML & CSS</h1>
+                </div>
+  )
 }

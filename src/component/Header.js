@@ -8,10 +8,10 @@ export default function Header() {
     };
 
     return (
-        <header className="bg-black md:bg-inherit text-white md:text-black px-10 md:px-56 py-5  z-10">
+        <header className="bg-black md:bg-inherit text-white md:text-black px-10 xl:px-56 py-5  z-10">
             <div className="flex flex-row justify-between items-center">
                 <div className="logo text-lg md:text-2xl font-bold">Mayur</div>
-                <nav className="md:flex hidden">
+                <nav className="lg:flex hidden">
                     <ul className="flex gap-10 text-lg">
                         <li>Home</li>
                         <li>About</li>
@@ -22,13 +22,13 @@ export default function Header() {
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <div className="md:hidden cursor-pointer text-lg text-gray-400  flex items-center" onClick={toggleMenu}>
+                <div className="lg:hidden cursor-pointer text-lg text-gray-400  flex items-center" onClick={toggleMenu}>
                     
                 <MdMenu className="mr-1 "  /> MENU
                 </div>
             </div>
             {menuOpen && (
-                <nav className="md:hidden flex flex-col items-end pt-3">
+                <nav className="lg:hidden flex flex-col items-end pt-3">
                     <ul className="flex flex-col gap-2 items-end text-sm">
                         <li>Home</li>
                         <li>About</li>
