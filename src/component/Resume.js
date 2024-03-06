@@ -1,5 +1,5 @@
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
-import { Progress } from "flowbite-react";
+
 
 const FEATURED_SKILLS = [
   {

@@ -4,7 +4,7 @@ import Main from "./component/MainComponent.js";
 import About from "./component/AboutUs.js";
 import Resume from "./component/Resume.js";
 import Services from "./component/Services.js";
-
+import Projects from "./component/Projects.js";
 export default function App() {
   return (
     <div>
@@ -25,6 +25,7 @@ export default function App() {
         <About />
         <Resume />
         <Services />
+        <Projects />
       </div>
     </div>
   );
