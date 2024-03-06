@@ -1,4 +1,5 @@
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
+import { Progress } from "flowbite-react";
 
 const FEATURED_SKILLS = [
   {
@@ -7,13 +8,42 @@ const FEATURED_SKILLS = [
   },
   {
     name: "JavaScript",
-    value: 80,
+    value: 60,
   },
   {
     name: "React",
-    value: 85,
+    value: 75,
   },
+  {
+    name: "Node.js",
+    value: 70,
+  },
+  {
+    name: "Express.js",
+    value: 70,
+  },
+  {
+    name: "MongoDB",
+    value: 80,
+  },
+  {
+    name: "Python",
+    value: 70,
+  },
+  {
+    name: "Django",
+    value: 70,
+  },
+  {
+    name: "C++",
+    value: 80,
+  },
+  {
+    name: "Java",
+    value: 70,
+  }
 ];
+
 export default function Resume() {
   return (
     <div className="flex flex-row h-full lg:h-[80vh] py-20">
@@ -58,7 +88,7 @@ export default function Resume() {
                 consulting.
               </p>
             </div>
-
+            <hr />
             <div>
               <h1 className="text-[16px] font-bold text-custom-blue mt-8 px-20">
                 2019-2023
@@ -79,6 +109,7 @@ export default function Resume() {
                 and project management, making them valuable in industries
               </p>
             </div>
+            <hr />
           </div>
 
           <div id="page-2" className=" mt-9 py-10">
@@ -88,8 +119,14 @@ export default function Resume() {
               </h2>
 
               <div className="flex flex-col md:flex-row  justify-between items-center px-10">
-                {FEATURED_SKILLS.map((skill, index) => (
+                {FEATURED_SKILLS.slice(0, 3).map((skill, index) => (
                   <CircularSkill key={index} {...skill} />
+                ))}
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 justify-between items-center px-10">
+                {FEATURED_SKILLS.slice(3).map((skill, index) => (
+                  <SkillsBar key={index} {...skill} />
                 ))}
               </div>
             </div>
@@ -120,6 +157,26 @@ function CircularSkill({ name, value }) {
       </CircularProgressbarWithChildren>
 
       <h1 className="font-bold text-[20px] mt-6">{name}</h1>
+    </div>
+  );
+}
+
+function SkillsBar({ name, value }) {
+  return (
+    <div className="flex flex-col items-start gap-2 py-10">
+      <div className="flex gap-2">
+        <p>{name}</p>
+      </div>
+      {/* <progress value={value} max={100} min={0} className="bg-[#3e64ff]"> </progress> */}
+
+      <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+        <div
+          class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+          style={{ width: `${value}%` }}
+        >
+          {value}%
+        </div>
+      </div>
     </div>
   );
 }
