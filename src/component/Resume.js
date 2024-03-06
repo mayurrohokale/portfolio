@@ -11,8 +11,12 @@ const FEATURED_SKILLS = [
     value: 60,
   },
   {
+    name: "Angular",
+    value: 60,
+  },
+  {
     name: "React",
-    value: 75,
+    value: 70,
   },
   {
     name: "Node.js",
@@ -27,12 +31,8 @@ const FEATURED_SKILLS = [
     value: 80,
   },
   {
-    name: "Python",
-    value: 70,
-  },
-  {
-    name: "Django",
-    value: 70,
+    name: "C",
+    value: 90,
   },
   {
     name: "C++",
@@ -41,7 +41,12 @@ const FEATURED_SKILLS = [
   {
     name: "Java",
     value: 70,
-  }
+  },
+  {
+    name: "Next.js",
+    value: 50,
+  },
+  
 ];
 
 export default function Resume() {
