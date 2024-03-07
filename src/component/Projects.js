@@ -6,12 +6,12 @@ const data = [
     name: "E-Commerce Website",
   },
   {
-    image: "./E-commerce.png",
-    name: "Donation Web sites",
+    image: "./donation.png",
+    name: "Donation Web site",
   },
   {
-    image: "./E-commerce.png",
-    name: "xyz",
+    image: "./Question.jpg",
+    name: "Building!",
   },
 ];
 
@@ -22,6 +22,7 @@ function Projectdata({ image, name }) {
       style={{
         background: `url(${image})`,
         backgroundSize: "cover",
+        backgroundRepeat: "no-repeat"
       }}
     >
       <div className="opacity-0 hover:opacity-100 hover:bg-custom-blue h-[300px] flex justify-center text-center items-center hover:bg-opacity-70 px-2 py-2">
@@ -45,7 +46,7 @@ export default function Projects() {
       <p className="text-center text-[16px] md:text-[20px] text-[#999999]">
         Something Built With Passion
       </p>
-      <div className="grid grid-cols-1  mt-8 items-center px-11 md:grid-cols-3  ">
+      <div className="grid grid-cols-1  mt-8 items-center px-11 md:grid-cols-3 gap-4 ">
         {data.map((project, index) => (
           <Projectdata key={index} image={project.image} name={project.name} />
         ))}
@@ -77,6 +78,7 @@ export default function Projects() {
         className="mt-14 bg-cover bg-no-repeat "
         style={{
           background: "url('./snow2.jpg')",
+          
         }}
       >
         {/* <img
