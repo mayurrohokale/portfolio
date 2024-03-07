@@ -17,14 +17,21 @@ const data = [
 
 function Projectdata({ image, name }) {
   return (
-    <div className="hover:shadow-2xl shadow-black px-2 py-2">
-      <img src={image} alt={name} />
-      <p
-        className="text-[#999999---
-            ] text-center mt-4"
-      >
-        {name}
-      </p>
+    <div
+      className="hover:shadow-2xl shadow-black bg-cover bg-no-repeat"
+      style={{
+        background: `url(${image})`,
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="opacity-0 hover:opacity-100 hover:bg-custom-blue h-[300px] flex justify-center text-center items-center hover:bg-opacity-70 px-2 py-2">
+        {/* <img src={image} alt={name} /> */}
+        <p
+          className="text-2xl font-semibold text-white text-center"
+        >
+          {name}
+        </p>
+      </div>
     </div>
   );
 }
@@ -38,21 +45,52 @@ export default function Projects() {
       <p className="text-center text-[16px] md:text-[20px] text-[#999999]">
         Something Built With Passion
       </p>
-      <div className="grid grid-cols-1  mt-8 items-center gap-5 px-11 md:grid-cols-3  ">
+      <div className="grid grid-cols-1  mt-8 items-center px-11 md:grid-cols-3  ">
         {data.map((project, index) => (
           <Projectdata key={index} image={project.image} name={project.name} />
         ))}
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 text-center mt-16 gap-3 px-4  ">
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl "> <h1 className="font-bold text-custom-blue">100</h1> <p>Milestones</p></div>
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl" > <h1 className="font-bold text-custom-blue">100</h1> <p>Completed Projects</p></div>
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl" > <h1 className="font-bold text-custom-blue">100</h1> <p>Work Experience</p></div>
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl" > <h1 className="font-bold text-custom-blue" >100</h1> <p>Cups of Cofee</p></div>
+        <div className="hover:shadow-lg px-2 py-2 shadow-2xl ">
+          {" "}
+          <h1 className="font-bold text-custom-blue">100</h1> <p>Milestones</p>
+        </div>
+        <div className="hover:shadow-lg px-2 py-2 shadow-2xl">
+          {" "}
+          <h1 className="font-bold text-custom-blue">100</h1>{" "}
+          <p>Completed Projects</p>
+        </div>
+        <div className="hover:shadow-lg px-2 py-2 shadow-2xl">
+          {" "}
+          <h1 className="font-bold text-custom-blue">100</h1>{" "}
+          <p>Work Experience</p>
+        </div>
+        <div className="hover:shadow-lg px-2 py-2 shadow-2xl">
+          {" "}
+          <h1 className="font-bold text-custom-blue">100</h1>{" "}
+          <p>Cups of Cofee</p>
+        </div>
       </div>
 
-      <div className="mt-14 ">
-        <img src="./snow.jpg" alt="snow" className="w-full object-cover h-[200px] " />
+      <div
+        className="mt-14 bg-cover bg-no-repeat"
+        style={{
+          background: "url('./snow.jpg')",
+        }}
+      >
+        {/* <img
+          src="./snow.jpg"
+          alt="snow"
+          className="w-full object-cover h-[200px] "
+        /> */}
+        <div className="bg-custom-blue bg-opacity-70 text-center text-white items-center py-20 h-full flex flex-col px-44 gap-5">
+          <p className="text-5xl font-bold">I'm <span className="text-[#a0f669]">Available</span> for Freelancing</p>
+          <p className="text-base">
+            remon ponshorm resomon ash hi howe ou doaue hsa ooawu dkha uue he ksaye hdyeka 
+          </p>
+          <button className="text-base p-5 bg-custom-blue uppercase font-semibold rounded-full w-[200px]">Hire Me</button>
+        </div>
       </div>
     </div>
   );
