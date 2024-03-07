@@ -7,7 +7,7 @@ export default function Services() {
       <p className="text-center text-[#999999] text-[12px] md:text-[22px] mt-8 ">
         Boost your online presence with our tailored web solutions.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-11   text-center  items-center mx-auto w-[85%] md:text-[16px] text-[12px] text-[#999999] cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-11   text-center  items-center mx-auto w-[85%] md:text-[16px] text-[12px] text-[#999999] cursor-pointer mt-11">
         <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 ">
           <img src="./WebDesign.png" alt="web1" className="mx-auto my-auto" />
           <h1>WEB DESIGN</h1>
@@ -40,4 +40,7 @@ export default function Services() {
       </div>
     </div>
   );
+
+
+  
 }
