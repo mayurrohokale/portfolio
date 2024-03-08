@@ -18,7 +18,7 @@ const Icon_arr = [
   {
     Icon: SiTelegram,
     name: "Email Address",
-    description: <a href="link" className="text-blue-500">mayurrohokale1041@gmail.com</a>,
+    description: <a href="mayurrohokale1041gmail.com" className="text-blue-500">mayurrohokale1041@gmail.com</a>,
   },
   {
     Icon: FaEarthAsia,

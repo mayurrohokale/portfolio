@@ -1,7 +1,7 @@
 export default function Services() {
   return (
-    <div id="services">
-      <h1 className="text-center font-bold text-2xl md:text-[50px] ">
+    <div id="services" >
+      <h1 className="text-center font-bold text-xl md:text-[50px] ">
         Services
       </h1>
       <p className="text-center text-[#999999] text-[12px] md:text-[22px] mt-8 ">
@@ -11,7 +11,7 @@ export default function Services() {
         <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 " id="design">
           <img src="./WebDesign.png" alt="web1" className="mx-auto my-auto" />
           <h1>WEB DESIGN</h1>
-          <hr className="border-2 border-custom-blue w-1/4 mx-auto h-1/6" />
+          <hr className="border-2 border-custom-blue w-1/4 mx-auto h-1/6 " />
           <p className="pt-6">
             "Elevate your brand online with our sleek, powerful web development
             services that captivate and convert."
