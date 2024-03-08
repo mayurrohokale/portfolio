@@ -8,7 +8,7 @@ export default function Services() {
         Boost your online presence with our tailored web solutions.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-11   text-center  items-center mx-auto w-[85%] md:text-[16px] text-[12px] text-[#999999] cursor-pointer mt-11">
-        <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 ">
+        <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 " id="design">
           <img src="./WebDesign.png" alt="web1" className="mx-auto my-auto" />
           <h1>WEB DESIGN</h1>
           <hr className="border-2 border-custom-blue w-1/4 mx-auto h-1/6" />
@@ -18,7 +18,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 ">
+        <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 " id="developer">
           <img src="./WebDev.png" alt="web2" className="mx-auto my-auto" />
           <h1>WEB DEVELOPER</h1>
           <hr className="border-2 border-custom-blue w-1/4 mx-auto h-1/6" />
@@ -28,7 +28,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 ">
+        <div className=" rounded-xl bg-gray-300/10 hover:shadow-2xl shadow-black py-4 px-4 " id="app">
           <img src="./AppDev.png" alt="app" className="mx-auto my-auto" />
           <h1>APP DEVELOPER</h1>
           <hr className="border-2 border-custom-blue w-1/4 mx-auto h-1/6" />

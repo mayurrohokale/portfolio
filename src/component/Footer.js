@@ -53,15 +53,15 @@ export default function Footer() {
           <ul className="text-[#999999]">
             <li className="flex items-center">
               <FaArrowRightLong className="mr-2" />
-              Web Design
+             <a href="#design">Web Design</a>
             </li>
             <li className="flex items-center">
               <FaArrowRightLong className="mr-2" />
-              Web Development
+              <a href="#developer">Web Development</a>
             </li>
             <li className="flex items-center">
               <FaArrowRightLong className="mr-2" />
-              App Deveelopment
+              <a href="#app">App Development</a>
             </li>
           </ul>
         </div>
@@ -77,8 +77,10 @@ export default function Footer() {
                 <MdEmail className="mr-2 mt-2 " /> mayurrohokale1041@gmail.com</li>
             </ul>
         </div>
+        
       </div>
-      <div><p>Copyright ©2024 All rights reserved | Crafted With &hearts</p></div>
+      <div className="text-white text-center py-4"><p>Copyright ©2024 All rights reserved | Crafted With  <span className="text-[22px] text-red-600">&hearts;</span></p></div>
+    
     </div>
   );
 }
