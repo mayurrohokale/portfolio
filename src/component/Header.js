@@ -8,7 +8,7 @@ export default function Header() {
     };
 
     return (
-        <header className="bg-black md:bg-inherit text-white md:text-black px-10 xl:px-56 py-5  z-10" id="home">
+        <header className="bg-black md:bg-inherit text-white md:text-black px-10 xl:px-56 py-5  z-10 " id="home">
             <div className="flex flex-row justify-between items-center">
                 <div className="logo text-lg md:text-2xl font-bold">Mayur</div>
                 <nav className="lg:flex hidden">
