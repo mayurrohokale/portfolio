@@ -6,6 +6,7 @@ import Resume from "./component/Resume.js";
 import Services from "./component/Services.js";
 import Projects from "./component/Projects.js";
 import Contact from "./component/Contact.js";
+import Footer from "./component/Footer.js";
 export default function App() {
   return (
     <div>
@@ -28,6 +29,7 @@ export default function App() {
         <Services />
         <Projects />
         <Contact />
+        <Footer/>
       </div>
     </div>
   );
