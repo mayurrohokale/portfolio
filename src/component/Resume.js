@@ -50,6 +50,9 @@ const FEATURED_SKILLS = [
 ];
 
 export default function Resume() {
+
+
+
   return (
     <div className="flex flex-row h-full lg:h-[80vh] py-20" id="resume">
       <div className="bg-blue-50 hidden lg:block">

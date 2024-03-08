@@ -5,7 +5,8 @@ import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div className="bg-black mt-12 items-center w-screen">
+    <div className="bg-black mt-12 items-center ">
+      
       <div className="grid xl:grid-cols-4 grid-cols-1 text-white px-8 py-10 gap-4 ">
         <div>
           <h1 className="text-[24px] font-bold">About</h1>

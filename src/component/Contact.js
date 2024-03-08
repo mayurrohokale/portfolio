@@ -12,18 +12,18 @@ const Icon_arr = [
   {
     Icon: FaPhone,
     name: "Phone",
-    description: "+91 9284659472",
+    description: <a href="link" className="text-blue-500">+91 9284659472</a>,
   },
 
   {
     Icon: SiTelegram,
     name: "Email Address",
-    description: "mayurrohokale1041@gmail.com",
+    description: <a href="link" className="text-blue-500">mayurrohokale1041@gmail.com</a>,
   },
   {
     Icon: FaEarthAsia,
     name: "Website",
-    description: "www.mayurohokale.me",
+    description: <a href="link" className="text-blue-500">www.mayurrohokale.me</a>,
   },
 ];
 

@@ -9,7 +9,7 @@ import Contact from "./component/Contact.js";
 import Footer from "./component/Footer.js";
 export default function App() {
   return (
-    <div>
+    <div className="max-w-screen overflow-hidden">
       <div className="flex flex-row">
         <div className="relative w-full h-screen ">
           <div className="flex flex-row">

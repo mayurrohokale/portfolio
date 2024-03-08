@@ -12,6 +12,7 @@
     "bootstrap": "^5.3.3",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.2",
+    "framer-motion": "^11.0.8",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-circular-progressbar": "^2.1.0",
