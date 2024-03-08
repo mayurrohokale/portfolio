@@ -1,14 +1,84 @@
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
-
-export default function Footer(){
-    return (
-        <div className="bg-black mt-12">
-            <div className="grid grid-cols-4 text-white">
-                <div>About</div>
-                <div>Links</div>
-                <div>Services</div>
-                <div>Have a Question</div>
-            </div>
+export default function Footer() {
+  return (
+    <div className="bg-black mt-12 w-auto items-center px-24">
+      <div className="grid xl:grid-cols-4 grid-cols-1 text-white px-8 py-10 gap-4">
+        <div>
+          <h1 className="text-[24px] font-bold">About</h1>
+          <p className="text-[#999999]">
+            "I am a passionate web developer with expertise in front-end and
+            back-end technologies."
+          </p>
         </div>
-    );
+        <div>
+          <h1 className="text-[24px] font-bold">Links</h1>
+          <ul className="gap-2 text-[#999999]">
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              <a href="#home">Home</a>
+            </li>
+
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              <a href="#about">About</a>
+            </li>
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              <a href="#resume">Resume</a>
+            </li>
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              <a href="#page-2">Skills</a>
+            </li>
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              <a href="#services">Services</a>
+            </li>
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h1 className="font-bold text-[22px]">Services</h1>
+          <ul className="text-[#999999]">
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              Web Design
+            </li>
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              Web Development
+            </li>
+            <li className="flex items-center">
+              <FaArrowRightLong className="mr-2" />
+              App Deveelopment
+            </li>
+          </ul>
+        </div>
+        <div>
+            <h1 className="font-bold">Have a Questions?</h1>
+            <ul>
+                <li className="flex items-start">
+                <FaLocationDot className="mr-2 mt-2"/><span className="text-[#999999]">Kothrud Pune, Maharashtra</span></li>
+                <li className="flex items-start text-[#999999]">
+                <FaPhone className="mr-2 mt-2"/>+91 9284659472</li>
+                <li 
+                className="flex items-start text-[#999999]">
+                <MdEmail className="mr-2 mt-2 " /> mayurrohokale1041@gmail.com</li>
+            </ul>
+        </div>
+      </div>
+      <div><p>Copyright ©2024 All rights reserved | Crafted With &hearts</p></div>
+    </div>
+  );
 }

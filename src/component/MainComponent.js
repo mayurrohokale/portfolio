@@ -43,7 +43,7 @@ export default function MainComponent() {
   }, []);
 
   return (
-    <div>
+    <div >
     <div className="flex flex-col justify-center items-center h-[80vh] gap-0">
       <h4 className="text-[16px] font-bold uppercase text-custom-blue ">
         Hey! I AM

@@ -39,7 +39,7 @@ function Projectdata({ image, name }) {
 
 export default function Projects() {
   return (
-    <div>
+    <div id="projects">
       <h1 className="text-center text-[24px] md:text-[50px] font-bold mt-8">
         Projects
       </h1>

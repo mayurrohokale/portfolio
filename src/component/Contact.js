@@ -29,7 +29,7 @@ const Icon_arr = [
 
 export default function Contact() {
   return (
-    <div className="mt-8">
+    <div className="mt-8" id="contact">
       <div className="mt-16 text-center">
         <h1 className="font-bold text-24px md:text-[50px]">Contact Me</h1>
         <p className="text-[#999999] text-[16px] text-14px">

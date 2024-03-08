@@ -2,7 +2,7 @@
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col lg:flex-row px-5">
+    <div className="flex flex-col lg:flex-row px-5" id="about">
 
       <div className="w-full lg:w-1/2 max-h-screen  flex flex-col justify-center items-center lg:items-end">
         <img src="./profile-pic.jpg" alt="profilepicture" className='w-[500px]'/>
