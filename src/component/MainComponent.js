@@ -1,6 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import { FaArrowDownLong, } from "react-icons/fa6";
+import {motion} from 'framer-motion';
+import {fadeIn} from "../Variants";
+
 
 const ChangingWord = ({ words, wordIndex, changingColor, staticColor }) => {
   const [typedWord, setTypedWord] = useState("");
@@ -44,7 +47,11 @@ export default function MainComponent() {
 
   return (
     <div >
-    <div className="flex flex-col justify-center items-center h-[80vh] gap-0">
+    <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="flex flex-col justify-center items-center h-[80vh] gap-0">
       <h4 className="text-[16px] font-bold uppercase text-custom-blue ">
         Hey! I AM
       </h4>
@@ -56,7 +63,7 @@ export default function MainComponent() {
         staticColor={staticColor}
       />
         
-    </div>
+    </motion.div>
     <div className="flex justify-center mt-[-80px]">
         <FaArrowDownLong className="animate-bounce text-custom-blue w-10 h-7" />
       </div>

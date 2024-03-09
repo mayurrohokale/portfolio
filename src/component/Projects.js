@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from 'framer-motion';
-import {fadeIn} from "../Variants"
+import {fadeIn} from "../Variants";
 
 
 
@@ -44,38 +44,66 @@ function Projectdata({ image, name }) {
 export default function Projects() {
   return (
     <div id="projects">
-      <h1 className="text-center text-[24px] md:text-[50px] font-bold mt-8">
+      <motion.h1
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="text-center text-[24px] md:text-[50px] font-bold mt-8">
         Projects
-      </h1>
-      <p className="text-center text-[16px] md:text-[20px] text-[#999999]">
+      </motion.h1>
+      <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="text-center text-[16px] md:text-[20px] text-[#999999]">
         Something Built With Passion
-      </p>
-      <div className="grid grid-cols-1  mt-8 items-center px-11 md:grid-cols-3 gap-4 ">
+      </motion.p>
+      <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="grid grid-cols-1  mt-8 items-center px-11 md:grid-cols-3 gap-4 ">
         {data.map((project, index) => (
           <Projectdata key={index} image={project.image} name={project.name} />
         ))}
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 text-center mt-16 gap-3 px-4  ">
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl ">
+        <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="hover:shadow-lg px-2 py-2 shadow-2xl ">
           {" "}
           <h1 className="font-bold text-custom-blue">100</h1> <p>Milestones</p>
-        </div>
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl">
+        </motion.div>
+        <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="hover:shadow-lg px-2 py-2 shadow-2xl">
           {" "}
           <h1 className="font-bold text-custom-blue">100</h1>{" "}
           <p>Completed Projects</p>
-        </div>
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl">
+        </motion.div>
+        <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="hover:shadow-lg px-2 py-2 shadow-2xl">
           {" "}
           <h1 className="font-bold text-custom-blue">100</h1>{" "}
           <p>Work Experience</p>
-        </div>
-        <div className="hover:shadow-lg px-2 py-2 shadow-2xl">
+        </motion.div>
+        <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="hover:shadow-lg px-2 py-2 shadow-2xl">
           {" "}
           <h1 className="font-bold text-custom-blue">100</h1>{" "}
           <p>Cups of Cofee</p>
-        </div>
+        </motion.div>
       </div>
 
       <div

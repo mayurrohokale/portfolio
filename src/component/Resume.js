@@ -1,5 +1,6 @@
 import { CircularProgressbarWithChildren } from "react-circular-progressbar";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../Variants";
 
 const FEATURED_SKILLS = [
   {
@@ -46,13 +47,9 @@ const FEATURED_SKILLS = [
     name: "Next.js",
     value: 50,
   },
-  
 ];
 
 export default function Resume() {
-
-
-
   return (
     <div className="flex flex-row h-full lg:h-[80vh] py-20" id="resume">
       <div className="bg-blue-50 hidden lg:block">
@@ -77,7 +74,12 @@ export default function Resume() {
             <h2 className="text-[30px] font-bold text-custom-blue py-5 px-4">
               Education
             </h2>
-            <div>
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }}
+            >
               <h1 className="text-[16px] font-bold text-custom-blue px-20">
                 2023-2025
               </h1>
@@ -95,9 +97,14 @@ export default function Resume() {
                 roles in software engineering, project management, and technical
                 consulting.
               </p>
-            </div>
+            </motion.div>
             <hr />
-            <div>
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }}
+            >
               <h1 className="text-[16px] font-bold text-custom-blue mt-8 px-20">
                 2019-2023
               </h1>
@@ -116,7 +123,7 @@ export default function Resume() {
                 graduates with skills in problem-solving, analytical thinking,
                 and project management, making them valuable in industries
               </p>
-            </div>
+            </motion.div>
             <hr />
           </div>
 
@@ -126,17 +133,29 @@ export default function Resume() {
                 Skills
               </h2>
 
-              <div className="flex flex-col md:flex-row  justify-between items-center px-10">
+              <motion.div
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true }}
+                className="flex flex-col md:flex-row  justify-between items-center px-10"
+              >
                 {FEATURED_SKILLS.slice(0, 3).map((skill, index) => (
                   <CircularSkill key={index} {...skill} />
                 ))}
-              </div>
+              </motion.div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 justify-between items-center px-10">
+              <motion.div
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: true }}
+                className="grid grid-cols-1 md:grid-cols-2 md:gap-10 justify-between items-center px-10"
+              >
                 {FEATURED_SKILLS.slice(3).map((skill, index) => (
                   <SkillsBar key={index} {...skill} />
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
