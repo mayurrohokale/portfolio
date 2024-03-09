@@ -2,7 +2,8 @@ import { FaAddressBook } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { SiTelegram } from "react-icons/si";
 import { FaEarthAsia } from "react-icons/fa6";
-
+import {motion} from 'framer-motion';
+import {fadeIn} from "../Variants"
 const Icon_arr = [
   {
     Icon: FaAddressBook,
@@ -30,19 +31,29 @@ const Icon_arr = [
 export default function Contact() {
   return (
     <div className="mt-8" id="contact">
-      <div className="mt-16 text-center">
+      
+      <motion.div 
+      variants={fadeIn("up",0.2)} 
+      initial='hidden'
+      whileInView={"show"}
+      viewport={{ once: false }}
+      className="mt-16 text-center">
         <h1 className="font-bold text-24px md:text-[50px]">Contact Me</h1>
         <p className="text-[#999999] text-[16px] text-14px">
           "I'm always eager to hear from you! Drop me a message and let's
           connect."
         </p>
-      </div>
+      </motion.div>
 
-      <div className="grid xl:grid-cols-4 lg:grid-cols-2 gap-4 px-12 py-12 items-center place-items-center ">
+      <motion.div 
+      variants={fadeIn("up",0.2)} 
+      initial='hidden'
+      whileInView={"show"}
+      viewport={{ once: false }} className="grid xl:grid-cols-4 lg:grid-cols-2 gap-4 px-12 py-12 items-center place-items-center ">
         {Icon_arr.map((item) => (
           <Icon {...item} />
         ))}
-      </div>
+      </motion.div>
 
       <div className="flex justify-center mt-12">
         <form className="w-full max-w-lg px-4 py-4 items-center">

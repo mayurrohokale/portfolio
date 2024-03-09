@@ -1,4 +1,8 @@
 import React from "react";
+import {motion} from 'framer-motion';
+import {fadeIn} from "../Variants"
+
+
 
 const data = [
   {
@@ -87,11 +91,26 @@ export default function Projects() {
           className="w-full object-cover h-[200px] "
         /> */}
         <div className="bg-custom-blue bg-opacity-70 text-center text-white items-center py-20 h-full flex flex-col px-44 gap-5">
-          <p className="font-bold md:text-[40px] text-[24px]">I'm <span className="text-[#a0f669]">Available</span> for Freelancing</p>
-          <p className="text-base md:text-[16px] text-[12px]  ">
+          <div></div>
+          <motion.p 
+      variants={fadeIn("up",0.2)} 
+      initial='hidden'
+      whileInView={"show"}
+      viewport={{ once: false }} className="font-bold md:text-[40px] text-[24px]">I'm <span className="text-[#a0f669]">Available</span> for Freelancing</motion.p>
+          < motion.p 
+      variants={fadeIn("up",0.2)} 
+      initial='hidden'
+      whileInView={"show"}
+      viewport={{ once: false }}
+           className="text-base md:text-[16px] text-[12px]  ">
           "Let's build something great together!"
-          </p>
-          <button className="text-base p-5 bg-custom-blue uppercase font-semibold rounded-full w-[180px] hover:text-black ">Hire Me</button>
+          </motion.p>
+          <motion.div 
+      variants={fadeIn("up",0.2)} 
+      initial='hidden'
+      whileInView={"show"}
+      viewport={{ once: false }}> <button className="text-base p-5 bg-custom-blue uppercase font-semibold rounded-full w-[180px] hover:text-black ">Hire Me</button></motion.div>
+         
         </div>
       </div>
     </div>
