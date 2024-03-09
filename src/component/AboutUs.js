@@ -14,7 +14,7 @@ export default function AboutUs() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }} className="w-full lg:w-1/2 max-h-screen  flex flex-col justify-center items-center lg:items-end">
-        <img src="./profile-pic.jpg" alt="profilepicture" className='w-[500px]'/>
+        <img src="./profile.jpg" alt="profilepicture" className='w-[500px]'/>
       </motion.div>
 
       <div className="w-full lg:w-1/2 h-screen bg-gray-100 px-8">
