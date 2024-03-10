@@ -6,6 +6,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { fadeIn } from "../Variants";
+
 export default function Footer() {
   return (
     <div className="bg-black mt-12 items-center ">
@@ -16,7 +19,11 @@ export default function Footer() {
             "I am a passionate web developer with expertise in front-end and
             back-end technologies."
           </p>
-          <div className="grid grid-cols-4  mt-5  gap-2 text-[25px] text-center">
+          <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="grid grid-cols-4  mt-5  gap-2 text-[25px] text-center">
             <a href="https://twitter.com/mayurrohokale25">
               <FaXTwitter />
             </a>
@@ -29,7 +36,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/mayur-rohokale-397a35210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
               <FaLinkedin />
             </a>
-          </div>
+          </motion.div>
         </div>
         <div>
           <h1 className="text-[24px] font-bold">Links</h1>
@@ -64,6 +71,7 @@ export default function Footer() {
               <a href="#contact">Contact</a>
             </li>
           </ul>
+          
         </div>
         <div>
           <h1 className="font-bold text-[22px]">Services</h1>

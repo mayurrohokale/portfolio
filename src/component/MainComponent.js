@@ -1,8 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
-import { FaArrowDownLong, } from "react-icons/fa6";
+import { FaAngular, FaArrowDownLong, } from "react-icons/fa6";
 import {motion} from 'framer-motion';
 import {fadeIn} from "../Variants";
+import { FaHtml5, FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { RiJavascriptFill } from "react-icons/ri";
+import { SiNextdotjs } from "react-icons/si";
 
 
 const ChangingWord = ({ words, wordIndex, changingColor, staticColor }) => {
@@ -62,6 +66,18 @@ export default function MainComponent() {
         changingColor={changingColor}
         staticColor={staticColor}
       />
+      <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true }} className="items-center flex flex-row gap-4 mt-8 text-[25px]">
+      <FaHtml5 />
+      <SiTailwindcss />
+      <RiJavascriptFill />
+      <FaAngular/>
+      <FaReact/>
+      <SiNextdotjs />
+      </motion.div>
         
     </motion.div>
     <div className="flex justify-center mt-[-80px]">

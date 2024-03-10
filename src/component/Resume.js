@@ -5,7 +5,7 @@ import { fadeIn } from "../Variants";
 const FEATURED_SKILLS = [
   {
     name: "HTML & CSS",
-    value: 90,
+    value: 80,
   },
   {
     name: "JavaScript",
