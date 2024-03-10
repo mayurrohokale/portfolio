@@ -84,7 +84,7 @@ export default function AboutUs() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true }} className="mt-4 md:mt-16">
-            <button className="bg-custom-blue text-white rounded-[15px] text-2xl md:text-2xl px-6 py-2 ">Resume</button>
+            <button className="bg-custom-blue text-white rounded-[15px] text-2xl md:text-2xl px-6 py-2 "><a href='./MayurRohokale.pdf' download={'Mayur_Resume'} >Resume</a></button>
           </motion.div>
         </div>
       </div>
