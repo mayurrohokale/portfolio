@@ -58,7 +58,7 @@ export default function Contact() {
       </motion.div>
 
       <div className="flex justify-center mt-12">
-        <form className="w-full max-w-lg px-4 py-4 items-center">
+        <form className="w-full max-w-lg px-4 py-4 items-center" id="send">
           <div className="mb-4">
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -95,7 +95,7 @@ export default function Contact() {
           <div className="flex items-center justify-center">
             <button
               className="bg-custom-blue hover:text-black text-white font-semibold py-4 px-7 rounded-[30px] focus:outline-none focus:shadow-outline w-[200px] text-[16px]"
-              type="submit"
+              type="submit" 
             >
               SEND MESSAGE
             </button>
